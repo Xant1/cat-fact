@@ -2,6 +2,6 @@
 - простое приложение для получение фактов о котах
 - использован асинхронный fetch запрос на api
 - api был получен с сайта https://catfact.ninja
-- img был получен с сайта https://vectorstock.com
+- img был получен с сайта https://vectorstock
  
 ![gif](https://github.com/Xant1/cat-fact/blob/gh-pages/gif.gif)

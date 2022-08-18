@@ -1,11 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  background-image: url(img/cat.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color:   #5872b3;
+  color: #25293e;
   font-family: 'Rubik', sans-serif;
   font-size: 1.25rem;
   line-height: 1.5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
 }
 
 button {
@@ -21,10 +27,10 @@ button {
 }
 button.getFact {
   font-weight: 600;
-  color: #382b22;
+  color: #fff;
   text-transform: uppercase;
   padding: 1.25em 2em;
-  background: #9981d3;
+  background:  #7d9be9;
   border: 2px solid #432a80;
   border-radius: 0.75em;
   transition: transform 0.15s;
@@ -39,15 +45,15 @@ button.getFact::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #9981d3;
+  background: #8868d4;
   border-radius: inherit;
-  box-shadow: 0 0 0 2px #432a80, 0 0.625em 0 0 #ffe3e2;
+  box-shadow: 0 0 0 2px #7154bb, 0 0.625em 0 0 #ffe3e2;
   transform: translate3d(0, 0.75em, -1em);
   transition: transform 0.15s, box-shadow 0.15s;
 }
 
 button.getFact:hover {
-  background: #9981d3;
+  background:  #7d9be9;
   transform: translate(0, 0.25em);
 }
 button.getFact:hover::before {
@@ -55,7 +61,7 @@ button.getFact:hover::before {
   transform: translate3d(0, 0.5em, -1em);
 }
 button.getFact:active {
-  background: #9981d3;
+  background:  #7d9be9;
   transform: translate(0em, 0.75em);
 }
 button.getFact:active::before {
@@ -63,22 +69,19 @@ button.getFact:active::before {
   transform: translate3d(0, 0, -1em);
 }
 
-.fact {
-  font-size: 25px;
+.conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
 }
 
-img {
-  position: fixed;
-  max-width: 875px;
-  left: 50%;
-  transform: translate(-50%, 0);
-  height: 875px;
+.content {
+  width: 100%;
+  max-width: 640px;
 }
 
 .fact {
-  position: fixed;
-  max-width: 701px;
-  top: 37%;
-  left: 50%;
-  transform: translate(-50%, 0);
+  text-align: center;
+  margin-top: 300px;
 }
